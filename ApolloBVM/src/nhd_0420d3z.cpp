@@ -131,15 +131,3 @@ void NhdDisplay::remove() {
   moveCursorRight();
   backspace();
 }
-
-String NhdDisplay::zeroPad(int in) {
-  // This helper function ensures integers have 2 decimal places.
-  
-  // Make a temp char array to hold the 2 digits.
-  char digit[2];
-
-  // Pad with a 0 if integer is 1 digit.
-  sprintf(digit, "%02d", in);
-
-  return String(digit);
-}
